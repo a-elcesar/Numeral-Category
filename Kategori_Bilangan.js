@@ -1,20 +1,51 @@
+arr = []
+hitungprima = []
+
 function bilangan(x) {
-    z = x
-    if (x%2==0 && x>=0 && x>0) {
-        z=[ 'bulat', 'cacah', 'asli', 'genap']
+    if (isNaN(x) == true) {
+        arr.push("Tolong masukkan angka!")
     }
-    else if (x%2!=0 &&x>=0 && x>0) {
-        z=[ 'bulat', 'cacah', 'asli', 'ganjil']
+    if (x % 1 == 0) {
+        arr.push("Bulat")
     }
-    else if (x==0) {
-        z=[ 'bulat', 'cacah', 'nol']
+    if (x >= 0) {
+        arr.push("Cacah")
     }
-    else if (x<0 && x%2==0) {
-        z=[ 'negatif', 'genap', 'bulat']
+    if (x < 0) {
+        arr.push("Negatif")
     }
-    else if (x<0 && x%2!=0) {
-        z=[ 'negatif', 'ganjil', 'bulat']
+    if (x != 0 && x > 0) {
+        arr.push("Asli")
     }
-    return z
+    if (x == 0) {
+        arr.push("Nol")
     }
-console.log(bilangan(-10))
+    if (x % 2 != 0 && x > 0) {
+        arr.push("Ganjil")
+    }
+    if (x % 2 == 0) {
+        arr.push("Genap")
+    }
+
+    // prima
+    if (x == 2) {
+        arr.push("Prima")
+    }
+    if (x == 3) {
+        arr.push("Prima")
+    }
+    else if (x > 3) {
+        for (y = 2; y < x; y++) {
+            hitungprima.push(x % y)
+        }
+        if (hitungprima.includes(0) == true && x > 1) {
+            arr.push("Komposit")
+
+        }
+        else {
+            arr.push("Prima")
+        }
+    }
+    return arr
+}
+console.log(bilangan(9))
