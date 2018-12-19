@@ -1,5 +1,6 @@
-# Kategori_Bilangan
+# Kategori Bilangan
 Sebuah file JavaScript yang mengandung sebuah return function (dengan 1 parameter) untuk menentukan kategori bilangan sebuah angka. Misal: angka 13 tergolong bilangan bulat, cacah, asli, ganjil & prima. Berikut adalah definisi & pengkategorian bilangan menurut laman Wikipedia:
+
 Bilangan Bulat: Bilangan yang terdiri atas bilangan cacah (0, 1, 2, 3, ...) beserta nilai negatifnya (0, -1, -2, -3, ...). Bilangan bulat dapat dituliskan tanpa komponen desimal atau pecahan.
 
 Bilangan Cacah: Himpunan bilangan bulat yang tidak bernilai negatif, yaitu (0, 1, 2, 3 ...).
